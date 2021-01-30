@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Александр Брега](https://up.htmlacademy.ru/htmlcss/30/user/1175717).
-* Наставник: `Неизвестно`.
+* Наставник: `[Сергей Остаповец] (https://htmlacademy.ru/profile/seraphim)`.
 
 ---
 
