@@ -2,27 +2,27 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Интернет магазин nerds</title>
+    <title>Интернет магазин «Nerds»</title>
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="/img/main/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/img/main/icon.png">
 </head>
 <body>
 <header>
-    <div class="logo">
-        <a href="index.html"><img src="img/main/logo.svg" height="160" width="65" alt="Логотип сайта"></a>
-    </div>
 </header>
-    <main>
-    <nav>
-        <ul>
-            <li><a href="#">Студия</a></li>
-            <li><a href="#">Клиенты</a></li>
-            <li><a href="#">Магазин</a></li>
-            <li><a href="#">Контакты</a></li>
-         </ul>
+  <nav>
+    <a href="index.html" class="main-header-logo">
+      <img src="img/main/logo.svg" height="160" width="65" alt="Логотип сайта">
+    </a>
+    <ul>
+      <li><a href="#">Студия</a></li>
+      <li><a href="#">Клиенты</a></li>
+      <li><a href="#">Магазин</a></li>
+      <li><a href="#">Контакты</a></li>
+    </ul>
+    <a class="basket" href="#">Корзина</a>
     </nav>
-    <a href="#">Корзина</a>
+    <main>
     <h1>Магазин готовых шаблонов</h1>
     <section>
        <h2>Фильтр товаров</h2>
@@ -89,25 +89,25 @@
         </fieldset>
         <ul>
             <li>
-                <p><img src="img/catalog/Group-1.jpg" height="578" width="359" alt="Sedona»"></p>
+                <p><img src="img/catalog/group-1.jpg" height="578" width="359" alt="Sedona»"></p>
                 <h3>sedona</h3>
                 <p>Информациионный сайт для туристов</p>
                 <button type="submit">9 900 ₽</button>
             </li>
             <li>
-                <p><img src="img/catalog/Group-2.png" height="578" width="359" alt="pink"></p>
+                <p><img src="img/catalog/group-2.png" height="578" width="359" alt="pink"></p>
             </li>
             <li>
-                <p><img src="img/catalog/Group-3.png" height="578" width="359" alt="borodinski"></p>
+                <p><img src="img/catalog/group-3.png" height="578" width="359" alt="borodinski"></p>
             </li>
             <li>
-                <p><img src="img/catalog/Group-4.jpg" height="578" width="359" alt="mishka"></p>
+                <p><img src="img/catalog/group-4.jpg" height="578" width="359" alt="mishka"></p>
             </li>
             <li>
-                <p><img src="img/catalog/Group-5.jpg" height="578" width="359" alt="A+"></p>
+                <p><img src="img/catalog/group-5.jpg" height="578" width="359" alt="A+"></p>
             </li>
             <li>
-                <p><img src="img/catalog/Group-6.jpg" height="578" width="359" alt="Кваст"></p>
+                <p><img src="img/catalog/group-6.jpg" height="578" width="359" alt="Кваст"></p>
             </li>
         </ul>
         <ul>
@@ -130,7 +130,7 @@
                 </div>
                 <div>
                 <img src="img/main/map-marker.png" width="231" height="190" alt="Метка на карте">
-                </div>
+            </div>
             <h3>NERDS DESIGN STUDIO</h3>
             <p>191186, Санкт-Петербург, ул. Б. Конюшевская, д. 19/8</p>
             <p>тел. <a href="tel:+78122757575">+7 (812) 275-75-75</a></p>
@@ -143,23 +143,35 @@
               <li><a><img src="img/main/networks/shape.svg" alt=""></a></li>
             </ul>
             <div class="icon">
-            <img src="img/main/networks/vk-icon.png" alt="">
-            <img src="img/main/networks/fb-icon.png" alt="">
-            <img src="img/main/networks/insta-icon.png" alt="">
+              <div>
+                <img src="img/main/networks/vk-icon.png" alt="">
+              </div>
+              <div>
+                <img src="img/main/networks/fb-icon.png" alt="">
+              </div>
+              <div>
+                <img src="img/main/networks/insta-icon.png" alt="">
+              </div>
             </div>
             <h3>Давайте дружить, это выгодно!</h3>
             <p>Скидка 10% для друзей из социальных сетей.</p>
           </section>
           <section>
             <h2>Напишите нам</h2>
-            <form action="#" method="post">
-              <label for="login-login">Ваше имя:</label>
-              <input type="text" name="login" id="login-login" placeholder="Имя Фамилия">
-              <label for="email-email">Ваш email:</label>
-              <input type="text" name="email" id="email-email" placeholder="email@example.com">
-              <label for="text">Текст письма:</label>
-              <textarea id="text" name="comment" rows="8" cols="56">В свободной форме</textarea>
-              <input type="button" value="Отправить">
+            <form action="https://echo.htmlacademy.ru" method="post">
+                <p>
+                  <label for="login-login">Ваше имя:</label>
+                  <input type="text" name="login" id="login-login" placeholder="Имя Фамилия">
+                </p>
+                <p>
+                  <label for="email-email">Ваш email:</label>
+                  <input type="email" name="email" id="email-email" placeholder="email@example.com">
+                </p>
+                <p>
+                  <label for="text">Текст письма:</label>
+                  <textarea id="text" name="comment" rows="8" cols="56">В свободной форме</textarea>
+                </p>
+                <button type="submit">Отправить</button>
             </form>
           </section>
     </footer>
