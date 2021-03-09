@@ -1,188 +1,245 @@
-:root {
---basic-black: #000000;
---basic-white: #ffffff;
---basic-lightly-red: #FB565A;
---basic-red: #D7373B;
---basic-dark-red: #E74246;
---basic-lightly-green: #00CA74;
---basic-green: #00BC6C;
---basic-dark-green: #00AA62;
---basic-lightly-yellow: #EFC849;
---basic-yellow: #EAB534;
---basic-dark-yellow: #E5A722;
---basic-grey: #666666;
---basic-dark-grey: #444444;
---basic-semi-dark: #283136;
---basic-background-grey:#EEEEEE;
-}
+@font-face {
+    font-family: "robotomedium";
+    src: url("fonts/robotomedium.woff2") format("woff"), url("fonts/robotomedium.woff") format("woff2");
+    }
+    
+@font-face {
+    font-family: "robotobold";
+    src: url("fonts/robotobold.woff2") format("woff"), url("fonts/robotomedium.woff") format("woff2");
+    }
+    
+@font-face {
+    font-family: "roboto";
+    src: url("fonts/roboto.woff2") format("woff"), url("fonts/roboto.woff") format("woff2");
+    }
+    
+    :root {
+    --basic-black: #000000;
+    --basic-white: #ffffff;
+    --basic-lightly-red: #fb565a;
+    --basic-red: #d7373b;
+    --basic-dark-red: #e74246;
+    --basic-lightly-green: #00ca74;
+    --basic-green: #00bc6c;
+    --basic-dark-green: #00aa62;
+    --basic-lightly-yellow: #efc849;
+    --basic-yellow: #eab534;
+    --basic-dark-yellow: #e5a722;
+    --basic-grey: #666666;
+    --basic-dark-grey: #444444;
+    --basic-dark-ggrey: #4d4d4d;
+    --basic-semi-dark: #283136;
+    --basic-background-grey: #eeeeee;
+    }
+    
+    .page-body {
+    font-family: "roboto", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--basic-black);
+    }
+    
+    .main-header {
+    background-color: var(--basic-background-grey);
+    }
+    
+    ul {
+    list-style-type: none;
+    }
+    
+    .site-navigation a,
+    .basket {
+    line-height: 30px;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--basic-black);
+    }
+    
+    h3 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: uppercase;
+    }
+    
+    .products-list p {
+    line-height: 24px;
+    }
+    
+    .products-list button {
+    line-height: 18px;
+    font-weight: 500;
+    color: var(--basic-white);
+    text-decoration: none;
+    text-transform: uppercase;
+    }
+    
+    .products-list button {
+    width: 160px;
+    height: 50px;
+    border: none;
+    }
+    
+    .products-list a {
+    display: inline-block;
+    padding: 15px 55px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--basic-white);
+    }
+    
+    .products-list .product.web a {
+    background: var(--basic-lightly-red);
+    }
+    
+    .products-list .product.annexes a {
+    background: var(--basic-lightly-green);
+    }
+    
+    .products-list .product.presentations a {
+    background: var(--basic-lightly-yellow);
+    }
+    
+    .about-us h3 {
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: 500;
+    }
+    
+    .about-us h3 {
+    line-height: 24px;
+    color: var(--basic-semi-dark);
+    }
+    
+    .about-us fieldset {
+    font-weight: 700;
+    line-height: 24px;
+    color: var(--basic-semi-dark);
+    }
+    
+    .list-of-works li {
+    line-height: 24px;
+    color: var(--basic-semi-dark);
+    }
+    
+    .statistics dt {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 64px;
+    }
+    
+    .statistics dd {
+    line-height: 18px;
+    }
+    
+    .address p {
+    line-height: 18px;
+    color: var(--basic-grey);
+    text-decoration: none;
+    }
+    
+    .address a {
+    line-height: 18px;
+    color: var(--basic-grey);
+    text-decoration: none;
+    }
+    
+    .address button {
+    width: 219px;
+    height: 50px;
+    font-family: "robotomedium", "Arial", sans-serif;
+    line-height: 30px;
+    font-weight: 500;
+    background: var(--basic-lightly-red);
+    color: var(--basic-white);
+    border: none;
+    text-transform: uppercase;
+    }
+    
+    .login-form .login-user,
+    .login-form .email,
+    .login-form .comment {
+    line-height: 18px;
+    color: var(--basic-dark-grey);
+    }
+    
+    label {
+    font-weight: 700;
+    line-height: 18px;
+    }
+    
+    h4 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 36px;
+    }
 
-.main-header {
-background-color: #EEEEEE;
-}
+    .site-navigation .score a {
+    text-decoration: underline;
+    text-decoration-color: var(--basic-red);    
+    }
 
-ul {
-list-style-type: none;    
-}
+    h1 {
+    font-weight: 500;
+    font-size: 55px;
+    }
 
-.site-navigation a, .basket {
-font-family: "Roboto";
-font-weight: 500;
-font-size: 16px;
-line-height: 30px;
-color:#000000;
-text-decoration: none;
-text-transform: uppercase;
-}
+    legend {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+    }
 
-h3 {
-font-family: "Roboto";
-font-weight: 700;
-font-size: 24px;
-line-height: 30px;
-color:#000000;
-text-transform: uppercase;
-}
+    .grid-list label, .feature label {
+    font-weight: 400;
+    color: var(--basic-semi-dark);
+    }
 
-.products-list p {
-font-family: "Roboto";
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-color:#000000;
-}
+    button[type="submit"] {
+    font-weight: 500;
+    padding: 15px 70px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    border: none;
+    }
 
-.products-list button {
-font-family: "Roboto";
-font-weight: 500;
-font-size: 16px;
-line-height: 18px;
-color:#ffffff;
-text-decoration: none;
-text-transform: uppercase;
-}
+    .list-of-layouts a {
+    display: inline-block;
+    padding: 15px 55px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--basic-white);
+    background-color: var(--basic-lightly-red);
+    }
 
-.products-list button {
-width: 160px;
-height: 50px;
-border: none;
-}
+    .page-switcher li {
+    display: inline-block;
+    padding: 15px 20px;
+    font-weight: 500;
+    line-height: 18px;
+    border-radius: 3px;
+    background-color: var(--basic-background-grey);
+    }
 
-.products-list li:nth-child(1) button {
-background: #FB565A;
-}
+    .page-switcher li:nth-child(1) {
+    padding: 10px 15px;
+    background-color: var(--basic-white);
+    border: 5px solid var(--basic-background-grey);
+    }
 
-.products-list li:nth-child(2) button {
-background: #00CA74;
-}
+    .page-switcher a {
+    text-decoration: none;
+    color: var(--basic-black);
+    }
 
-.products-list li:nth-child(3) button {
-background: #EFC849;
-}
-
-.about-us h3 {
-font-family: "Roboto";
-font-weight: 500;
-font-size: 45px;
-line-height: 45px;
-color:#000000;
-}
-
-.about-us h3 {
-font-family: "Roboto";
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-color:#283136;
-}
-
-.about-us fieldset {
-font-family: "Roboto";
-font-weight: 700;
-font-size: 16px;
-line-height: 24px;
-color:#283136;
-}
-
-.list-of-works li {
-font-family: "Roboto";
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-color:#283136;
-}
-
-.statistics dt {
-font-family: "Roboto";
-font-weight: 700;
-font-size: 45px;
-line-height: 64px;
-color:#000000;
-}
-
-.statistics dd {
-font-family: "Roboto";
-font-weight: 400;
-font-size: 16px;
-line-height: 18px;
-color:#000000;
-}
-
-.address p {
-font-family: "Roboto";
-font-weight: 400;
-font-size: 16px;
-line-height: 18px;
-color:#666666;
-text-decoration: none;
-}
-
-.address a {
-font-family: "Roboto";
-font-weight: 400;
-font-size: 16px;
-line-height: 18px;
-color:#666666;
-text-decoration: none;
-}
-
-input[type="button"] {
-width: 219px;
-height: 50px;
-font-family: "Roboto";
-font-weight: 500;
-font-size: 16px;
-line-height: 30px;
-background: #FB565A;
-color:#ffffff;
-border: none;
-text-transform: uppercase;
-}
-
-.login-form .login-user, .login-form .email, .login-form .comment {
-font-family: "Roboto";
-font-weight: 400;
-font-size: 16px;
-line-height: 18px;
-color: #444444;
-}
-
-label {
-font-family: "Roboto";
-font-weight: 700;
-font-size: 16px;
-line-height: 18px;
-color: #000000;
-}
-
-h4 {
-font-family: "Roboto";
-font-weight: 700;
-font-size: 36px;
-line-height: 36px;
-color: #000000;   
-}
-
-
-
-
-
+    fieldset input[type="text"] {
+    width: 80px;
+    height: 38px;
+    text-align: center;
+    background-color: var(--basic-background-grey);
+    border: none; 
+    }
