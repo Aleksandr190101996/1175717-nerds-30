@@ -1,38 +1,36 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="UTF-8" />
     <title>Интернет магазин nerds</title>
     <link rel="icon" href="favicon.ico" />
     <link rel="icon" href="favicon/vector.svg" type="image/svg+xml" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="normalize.css" rel="stylesheet" />
     <link href="style.css" rel="stylesheet" />
   </head>
   <body class="page-body">
     <header class="main-header">
-      <a class="main-header-logo">
-        <img src="img/main/logo.svg" height="160" width="65" alt="Логотип сайта" />
-      </a>
       <nav class="main-navigation">
+      <div class="main-navigation-wrapper">
+        <a class="main-header-logo">
+          <img src="img/main/logo.svg" alt="Логотип сайта" />
+        </a>
         <ul class="site-navigation">
           <li class="studio"><a href="#">Студия</a></li>
           <li class="clients"><a href="#">Клиенты</a></li>
           <li class="score"><a href="catalog.html">Магазин</a></li>
           <li class="contacts"><a href="#contact">Контакты</a></li>
         </ul>
-      </nav>
+      <div class="user-basket">
       <a class="basket" href="#">Корзина</a>
-      <div>
-        <img src="img/main/slider.png" height="431" width="1157" alt="Изображение основополагающих подходов к выполнению заказов" />
       </div>
+      <div class="image-below-navigation">
+        <img src="img/main/slider.png" alt="Изображение основополагающих подходов к выполнению заказов" />
+      </div>
+    </div>
+    </nav>
     </header>
     <main class="container">
-      <ul>
-        <li><input type="radio" name="1" /></li>
-        <li><input type="radio" name="2" /></li>
-        <li><input type="radio" name="3" /></li>
-      </ul>
       <section class="technological-products">
         <ul class="products-list">
           <li class="product web">
@@ -64,7 +62,8 @@
           </li>
         </ul>
       </section>
-      <section class="about-us">
+      <div class="about-us">
+        <section class="about-company">
         <h2>
           Мы – маленькая, но гордая <br />
           дизайн-студия из Краснодара.
@@ -81,6 +80,9 @@
             <li class="work">Слайдшоу и видео для корпоративных презентаций</li>
           </ul>
         </fieldset>
+        </section>
+        <section class="key-indicators">
+        <h2 class="main-factors">Основные- показатели</h2>
         <div class="illustration">
           <img src="img/main/nerds-illustration.png" height="208" width="360" alt="" />
         </div>
@@ -96,6 +98,7 @@
           </dl>
         </fieldset>
       </section>
+      </div>
       <aside class="lototypes-projects">
         <ul class="list-logo">
           <li class="logo">
@@ -116,9 +119,8 @@
     <footer class="main-footer">
       <section class="modal-map">
         <div class="contacts">
-            <img src="img/main/map.png" height="416" alt="Карта" />
-            <img src="img/main/map-marker.png" width="231" height="190" alt="Метка на карте" />
           <div class="address" id="contact">
+            <div class="exact-address">
             <h2>NЁRDS DESIGN STUDIO</h2>
             <p>
               191186, Санкт-Петербург, <br />
@@ -127,6 +129,10 @@
             <p>тел.<a href="tel:+78122757575">+7 (812) 275-75-75</a></p>
             <a href="#">напишите нам</a>
           </div>
+          </div>
+        </div>
+        <div class="map-marker">
+          <img src="img/main/map-marker.png" width="231" height="190" alt="Метка на карте" />
         </div>
       </section>
       <section class="footer-social">
@@ -169,8 +175,10 @@
             </a>
           </li>
         </ul>
-        <h4>Давайте дружить, это выгодно!</h4>
-        <p>Скидка 10% для друзей из социальных сетей.</p>
+        <h4 class="card-title">
+        <span class="card-title-main">Давайте дружить, это выгодно!</span>
+        <span class="card-title-note">Скидка 10% для друзей из социальных сетей.</span>
+        </h4>
       </section>
       <section class="feedback">
         <h2>Напишите нам</h2>
